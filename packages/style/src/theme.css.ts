@@ -3,7 +3,11 @@ import { createGlobalTheme, createTheme, createThemeContract } from '@vanilla-ex
 import { rem } from './pxto';
 
 const sizes = {
-  appWidth: rem(800),
+  appWidth: rem(760),
+  appInline: rem(24),
+
+  header: rem(56),
+  headerMobile: rem(48),
 };
 
 const fonts = {
