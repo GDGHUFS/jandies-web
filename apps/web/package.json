@@ -15,7 +15,9 @@
     "**/*.{ts,tsx}": "eslint --fix --max-warnings 0"
   },
   "dependencies": {
+    "@vanilla-extract/css": "^1.17.0",
     "@jandies/ui": "workspace:*",
+    "@jandies/style": "workspace:*",
     "next": "^15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -26,6 +28,7 @@
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.5",
     "@types/react-dom": "^19.0.3",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "@vanilla-extract/next-plugin": "^2.4.8"
   }
 }
