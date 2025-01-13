@@ -1,0 +1,31 @@
+{
+  "name": "@jandies/style",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "build": "tsc",
+    "check-types": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --max-warnings 0"
+    ]
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.17.0"
+  },
+  "devDependencies": {
+    "@jandies/eslint-config": "workspace:*",
+    "@jandies/typescript-config": "workspace:*",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.5",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "typescript": "^5.7.3"
+  }
+}
