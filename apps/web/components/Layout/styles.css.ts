@@ -1,5 +1,4 @@
 import { theme } from '@jandies/style';
-import { breakpoint } from '@jandies/style/dist/responsive.css';
 import { style } from '@vanilla-extract/css';
 
 export const root = style({
@@ -12,9 +11,7 @@ export const root = style({
 
 export const main = style({
   ...theme.layouts.column,
-  paddingTop: theme.sizes.headerMobile,
+  paddingTop: theme.sizes.header,
   paddingInline: theme.sizes.appInline,
   flex: 1,
-
-  ...breakpoint({ tablet: { paddingTop: theme.sizes.header } }),
 });

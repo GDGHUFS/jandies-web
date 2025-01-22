@@ -4,8 +4,8 @@ type BP = 'mobile' | 'tablet' | 'desktop' | string;
 
 const breakpoints = {
   mobile: '640px',
-  tablet: '960px',
-  desktop: '1280px',
+  tablet: '900px',
+  desktop: '1200px',
 };
 
 export const breakpoint = (rules: Partial<Record<BP, StyleRule>>) => {

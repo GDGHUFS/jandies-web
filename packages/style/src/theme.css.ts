@@ -3,11 +3,10 @@ import { createGlobalTheme, createTheme, createThemeContract } from '@vanilla-ex
 import { rem } from './pxto';
 
 const sizes = {
-  appWidth: rem(760),
+  appWidth: rem(1200),
   appInline: rem(24),
 
-  header: rem(56),
-  headerMobile: rem(48),
+  header: rem(63),
 };
 
 const fonts = {
@@ -63,6 +62,18 @@ const zIndices = {
   modal: '200',
 };
 
+const fontSizes = {
+  xxxl: rem(28),
+  xxl: rem(24),
+  xl: rem(20),
+  lg: rem(18),
+  md: rem(16),
+  sm: rem(14),
+  xs: rem(12),
+  xxs: rem(10),
+  xxxs: rem(8),
+};
+
 const typographies = {};
 
 const layerStyles = {};
@@ -104,6 +115,9 @@ export const colors = {
   gray800: '#525557',
   gray900: '#323537',
 
+  grass400: '#43A261',
+  grass900: '#004516',
+
   ...modeColors,
 };
 
@@ -114,6 +128,7 @@ export const darkColors = createTheme(modeColors, {});
 export const theme = createGlobalTheme(':root', {
   colors,
   fonts,
+  fontSizes,
   sizes,
   layouts,
   zIndices,
