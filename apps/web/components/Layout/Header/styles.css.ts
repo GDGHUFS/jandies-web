@@ -9,6 +9,7 @@ export const root = style({
   width: '100%',
   height: theme.sizes.header,
   gap: rem(26),
+  backgroundColor: theme.colors.white,
 });
 
 export const inner = style({

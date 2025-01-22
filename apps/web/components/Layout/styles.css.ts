@@ -11,7 +11,8 @@ export const root = style({
 
 export const main = style({
   ...theme.layouts.column,
-  paddingTop: theme.sizes.header,
+  paddingTop: `calc(${theme.sizes.header} + ${theme.sizes.appInline})`,
   paddingInline: theme.sizes.appInline,
+  paddingBottom: theme.sizes.appInline,
   flex: 1,
 });
