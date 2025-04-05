@@ -11,8 +11,6 @@ export const FarmCard = () => {
         <h5>동아리 → 대학교 주간 3위</h5>
       </Card.Header>
 
-      <div></div>
-
       <div className={styles.updateContainer}>
         <h3 className={styles.update}>최근 업데이트</h3>
 
