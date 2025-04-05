@@ -1,4 +1,4 @@
-import '@jandies/style/dist/global.css';
+import '@jandies/style/global';
 
 import { darkColors, lightColors } from '@jandies/style';
 import type { Metadata } from 'next';
