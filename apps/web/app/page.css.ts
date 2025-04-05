@@ -1,5 +1,4 @@
-import { rem, theme } from '@jandies/style';
-import { breakpoint } from '@jandies/style/dist/responsive.css';
+import { rem, theme, breakpoint } from '@jandies/style';
 import { style } from '@vanilla-extract/css';
 
 export const intro = style({
