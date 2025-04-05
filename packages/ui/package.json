@@ -3,11 +3,6 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
-  },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
@@ -22,14 +17,14 @@
   "devDependencies": {
     "@jandies/eslint-config": "workspace:*",
     "@jandies/typescript-config": "workspace:*",
-    "@types/node": "^22.10.5",
-    "@types/react": "^19.0.5",
-    "@types/react-dom": "^19.0.3",
-    "typescript": "^5.7.3"
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@radix-ui/react-popover": "^1.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@radix-ui/react-popover": "^1.1.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
