@@ -4,9 +4,10 @@ import { style } from '@vanilla-extract/css';
 export const root = style({
   justifyContent: 'space-between',
   minHeight: rem(240),
+  gap: rem(24),
 });
 
-export const hej = style({
+export const farm = style({
   color: theme.colors.gray600,
   fontSize: theme.fontSizes.base,
   fontWeight: 500,
@@ -19,8 +20,12 @@ export const name = style({
   fontWeight: 500,
 });
 
+export const updateContainer = style({
+  ...theme.layouts.column,
+  gap: rem(8),
+});
+
 export const update = style({
-  marginBottom: rem(8),
   color: theme.colors.gray600,
   fontSize: theme.fontSizes.base,
   fontWeight: 500,
