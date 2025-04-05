@@ -10,8 +10,8 @@ const sizes = {
 };
 
 const fonts = {
-  mono: `"Courier New", Courier, var(--font-pretendard), "Pretendard Variable", "Pretendard", monospace`,
-  sans: `var(--font-pretendard), "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif`,
+  mono: `"Courier New", Courier, "Pretendard Variable", "Pretendard", monospace`,
+  sans: `"Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif`,
 };
 
 const layouts = {
