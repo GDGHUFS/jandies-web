@@ -6,7 +6,7 @@ type BP = 'mobile' | 'tablet' | 'desktop' | string;
 
 export const breakpoints = {
   mobile: rem(640),
-  tablet: rem(900),
+  tablet: rem(960),
   desktop: rem(1200),
 };
 
