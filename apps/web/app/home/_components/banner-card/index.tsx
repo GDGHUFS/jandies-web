@@ -24,8 +24,17 @@ export const BannerCard = () => {
   return (
     <div className={styles.root}>
       <Flicking ref={flickingRef} align="prev" onChanged={e => setIndex(e.index)}>
-        <div className={styles.item}>
-          <div className={styles.background} />
+        <div className={styles.item} style={{ backgroundColor: '#2A453D' }}>
+          <div
+            className={styles.cover}
+            style={{
+              backgroundImage: `url(https://images.unsplash.com/photo-1724382057884-c6f06cae3dff?q=80&w=2856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+            }}
+            aria-hidden
+          />
+          <p className={styles.category}>SEASON EVENT</p>
+          <h2 className={styles.event}>잔디왕김훕스 이벤트가 시작됩니다.</h2>
+          <p className={styles.description}>@GDG on Campus · 2월 이벤트</p>
         </div>
       </Flicking>
 

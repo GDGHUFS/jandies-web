@@ -68,6 +68,7 @@ const fontSizes = {
   xl: rem(20),
   lg: rem(18),
   md: rem(16),
+  base: rem(15),
   sm: rem(14),
   xs: rem(12),
   xxs: rem(10),

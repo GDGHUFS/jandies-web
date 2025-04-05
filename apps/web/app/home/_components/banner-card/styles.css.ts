@@ -8,9 +8,10 @@ export const root = style({
 
 export const item = style({
   ...theme.layouts.column,
+  position: 'relative',
   width: '100%',
   minHeight: rem(240),
-  padding: rem(48),
+  padding: rem(32),
   marginRight: rem(16),
   borderRadius: rem(12),
   backgroundSize: 'cover',
@@ -19,13 +20,35 @@ export const item = style({
   transform: 'translateZ(0)',
 });
 
-export const background = style({
+export const cover = style({
   position: 'absolute',
   top: 0,
-  left: 0,
-  width: '100%',
+  right: 0,
+  width: '33%',
   height: '100%',
-  backgroundColor: '#2A453D',
+  backgroundSize: 'cover',
+  backgroundPosition: '50% 50%',
+});
+
+export const category = style({
+  color: theme.colors.whiteAlpha60,
+  fontSize: theme.fontSizes.xs,
+  fontWeight: 300,
+  letterSpacing: 1,
+});
+
+export const event = style({
+  marginTop: rem(6),
+  color: theme.colors.white,
+  fontSize: theme.fontSizes.xxxl,
+  fontWeight: 600,
+});
+
+export const description = style({
+  marginTop: rem(6),
+  color: theme.colors.whiteAlpha90,
+  fontSize: theme.fontSizes.base,
+  fontWeight: 500,
 });
 
 export const controller = style({

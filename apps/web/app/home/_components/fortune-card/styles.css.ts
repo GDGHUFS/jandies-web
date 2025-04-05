@@ -8,19 +8,22 @@ export const root = style({
 
 export const day = style({
   color: theme.colors.gray600,
-  fontSize: rem(16),
+  fontSize: theme.fontSizes.base,
+  fontWeight: 500,
 });
 
 export const date = style({
-  marginTop: rem(4),
+  marginTop: rem(2),
   color: theme.colors.black,
-  fontSize: rem(32),
+  fontSize: theme.fontSizes.xxxl,
+  fontWeight: 500,
 });
 
 export const fortune = style({
-  color: theme.colors.gray600,
-  fontSize: rem(20),
+  color: theme.colors.gray700,
+  fontSize: theme.fontSizes.base,
   textAlign: 'end',
+  wordBreak: 'keep-all',
 });
 
 globalStyle(`${fortune} em`, {
