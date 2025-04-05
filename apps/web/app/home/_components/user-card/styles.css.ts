@@ -6,19 +6,6 @@ export const root = style({
   minHeight: rem(240),
 });
 
-export const hej = style({
-  color: theme.colors.gray600,
-  fontSize: theme.fontSizes.base,
-  fontWeight: 500,
-});
-
-export const name = style({
-  marginTop: rem(2),
-  color: theme.colors.black,
-  fontSize: theme.fontSizes.xxl,
-  fontWeight: 500,
-});
-
 export const update = style({
   marginBottom: rem(8),
   color: theme.colors.gray600,

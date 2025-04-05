@@ -7,12 +7,7 @@ export const root = style({
   gap: rem(24),
 });
 
-export const updateContainer = style({
-  ...theme.layouts.column,
-  gap: rem(8),
-});
-
-export const update = style({
+export const ranking = style({
   color: theme.colors.gray600,
   fontSize: theme.fontSizes.base,
   fontWeight: 500,

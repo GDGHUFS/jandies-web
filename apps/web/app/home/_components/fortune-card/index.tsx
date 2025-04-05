@@ -5,10 +5,10 @@ import * as styles from './styles.css';
 export const FortuneCard = () => {
   return (
     <Card className={styles.root}>
-      <div>
-        <p className={styles.day}>화요일</p>
-        <p className={styles.date}>3월 23일</p>
-      </div>
+      <Card.Header>
+        <h4>화요일</h4>
+        <h2>3월 23일</h2>
+      </Card.Header>
 
       <p className={styles.fortune}>
         <em>오늘의 운세</em>

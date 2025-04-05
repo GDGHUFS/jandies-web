@@ -13,3 +13,9 @@ export const Card = ({ asChild = false, className, ...props }: CardProps) => {
 
   return <Comp className={clsx(className, styles.root)} {...props} />;
 };
+
+const CardHeader = ({ className, ...props }: ComponentProps<'div'>) => {
+  return <div className={clsx(className, styles.header)} {...props} />;
+};
+
+Card.Header = CardHeader;
