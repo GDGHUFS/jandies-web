@@ -4,6 +4,7 @@ import '@egjs/react-flicking/dist/flicking.css';
 
 import Flicking from '@egjs/react-flicking';
 import { ChevronLeftIcon, ChevronRightIcon } from '@jandies/icon';
+import Image from 'next/image';
 import { useRef, useState } from 'react';
 
 import * as styles from './styles.css';
@@ -25,13 +26,16 @@ export const BannerCard = () => {
     <div className={styles.root}>
       <Flicking ref={flickingRef} align="prev" onChanged={e => setIndex(e.index)}>
         <div className={styles.item} style={{ backgroundColor: '#2A453D' }}>
-          <div
-            className={styles.cover}
-            style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1724382057884-c6f06cae3dff?q=80&w=2856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-            }}
-            aria-hidden
-          />
+          <div className={styles.cover} aria-hidden>
+            <Image
+              src="https://images.unsplash.com/photo-1724382057884-c6f06cae3dff"
+              alt="커버 이미지"
+              sizes="(max-width: 768px) 100vw, (min-width: 769px) 33vw, (min-width: 1200px) 33vw"
+              draggable={false}
+              fill
+              priority
+            />
+          </div>
           <p className={styles.category}>SEASON EVENT</p>
           <h2 className={styles.event}>잔디왕김훕스 이벤트가 시작됩니다.</h2>
           <p className={styles.description}>@GDG on Campus · 2월 이벤트</p>

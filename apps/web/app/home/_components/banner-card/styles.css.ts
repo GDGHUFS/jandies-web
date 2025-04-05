@@ -1,4 +1,4 @@
-import { rem, theme } from '@jandies/style';
+import { breakpoint, rem, theme } from '@jandies/style';
 import { globalStyle, style } from '@vanilla-extract/css';
 
 export const root = style({
@@ -22,12 +22,18 @@ export const item = style({
 
 export const cover = style({
   position: 'absolute',
+  display: 'none',
   top: 0,
   right: 0,
   width: '33%',
   height: '100%',
-  backgroundSize: 'cover',
-  backgroundPosition: '50% 50%',
+  userSelect: 'none',
+
+  ...breakpoint({ tablet: { display: 'block' } }),
+});
+
+globalStyle(`${cover} > img`, {
+  objectFit: 'cover',
 });
 
 export const category = style({

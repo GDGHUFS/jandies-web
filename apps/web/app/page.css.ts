@@ -17,7 +17,7 @@ export const heading = style({
 export const description = style({
   marginTop: rem(25),
   color: theme.colors.gray700,
-  fontSize: theme.fontSizes.xl,
+  fontSize: theme.fontSizes.lg,
   fontWeight: 500,
   lineHeight: '160%',
   wordBreak: 'keep-all',
